@@ -1,128 +1,238 @@
-# snk
+# 👨‍💻 Dustless Web — Full-Stack Developer & AI Innovator
 
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/platane/platane/main.yml?label=action&style=flat-square)](https://github.com/Platane/Platane/actions/workflows/main.yml)
-[![GitHub release](https://img.shields.io/github/release/platane/snk.svg?style=flat-square)](https://github.com/platane/snk/releases/latest)
-[![GitHub marketplace](https://img.shields.io/badge/marketplace-snake-blue?logo=github&style=flat-square)](https://github.com/marketplace/actions/generate-snake-game-from-github-contribution-grid)
-![type definitions](https://img.shields.io/npm/types/typescript?style=flat-square)
-![code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)
+<div align="center">
 
-Generates a snake game from a github user contributions graph
+[![GitHub followers](https://img.shields.io/github/followers/Dustless-web?style=social)](https://github.com/Dustless-web)
+[![GitHub stars](https://img.shields.io/github/stars/Dustless-web?style=social)](https://github.com/Dustless-web)
 
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg"
-  />
-  <img
-    alt="github contribution grid snake animation"
-    src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg"
-  />
-</picture>
+**Building intelligent solutions at the intersection of web development, AI, and real-world impact**
 
-Pull a github user's contribution graph.
-Make it a snake Game, generate a snake path where the cells get eaten in an orderly fashion.
+[Portfolio](#-featured-projects) • [Skills](#-tech-stack) • [Connect](#-let-s-connect) • [Projects](#-projects-showcase)
 
-Generate a [gif](https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.gif) or [svg](https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg) image. Colors can [be](https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-ocean.svg) [customized](https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-grey.svg).
+</div>
 
-Available as github action. It can automatically generate a new image each day. Which makes for great [github profile readme](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme)
+---
 
-## Usage
+## 🎯 About Me
 
-### **github action**
+I'm a passionate full-stack developer with deep expertise in **modern web technologies** and **AI-driven applications**. My work spans from sleek user interfaces built with **TypeScript & React** to robust backend systems and machine learning solutions. I specialize in creating products that solve real problems—from **fall detection for seniors** to **AI advisory systems for small businesses**.
 
-```yaml
-- uses: Platane/snk@v3
-  with:
-    # github user name to read the contribution graph from (**required**)
-    # using action context var `github.repository_owner` or specified user
-    github_user_name: ${{ github.repository_owner }}
+- 🚀 Building innovative projects at the intersection of **AI, IoT, and Web Technologies**
+- 💻 Full-stack expertise: **TypeScript, Python, JavaScript, Kotlin, Go**
+- 🤖 AI/ML passion: NLP, computer vision, predictive analytics
+- 🏆 Hackathon finalist and contributor to impactful open-source projects
+- 🌍 Focus on creating technology that improves lives
 
-    # list of files to generate.
-    # one file per line. Each output can be customized with options as query string.
-    #
-    #  supported options:
-    #  - palette:           A preset of color, one of [github, github-dark, github-light]
-    #  - color_snake:       Color of the snake
-    #  - color_dots:        Coma separated list of dots color.
-    #                       The first one is 0 contribution, then it goes from the low contribution to the highest.
-    #                       Exactly 5 colors are expected.
-    #  - color_background:  Color of the background (for gif only)
-    outputs: |
-      dist/github-snake.svg
-      dist/github-snake-dark.svg?palette=github-dark
-      dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9&color_background=#aaaaaa
-```
+---
 
-[example with cron job](https://github.com/Platane/Platane/blob/master/.github/workflows/main.yml#L26-L33)
+## 🛠️ Tech Stack
 
-### **svg**
+<table>
+<tr>
+<td valign="top" width="33%">
 
-If you are only interested in generating a svg (not a gif), consider using this faster action: `uses: Platane/snk/svg-only@v3`
+### Frontend
+- **React** / **Next.js**
+- **TypeScript**
+- **Tailwind CSS**
+- **Framer Motion** (animations)
+- **HTML5 / CSS3**
 
-### **dark mode**
+</td>
+<td valign="top" width="33%">
 
-![dark mode](https://github.com/user-attachments/assets/6b900b64-0cdc-43f0-a234-e11dba8e786e)
+### Backend & Databases
+- **Python** (FastAPI, Django)
+- **Node.js** / **Express**
+- **PostgreSQL** / **MongoDB**
+- **REST APIs** / **GraphQL**
+- **Firebase**
 
-For **dark mode** support on github, use this [special syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#specifying-the-theme-an-image-is-shown-to) in your readme.
+</td>
+<td valign="top" width="33%">
 
-```html
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="github-snake.svg" />
-  <img alt="github-snake" src="github-snake.svg" />
-</picture>
-```
+### AI & Emerging Tech
+- **Machine Learning** (TensorFlow, scikit-learn)
+- **NLP & LLMs**
+- **Computer Vision**
+- **Mobile Development** (Kotlin/Android)
+- **DevOps & Cloud**
 
-### **interactive demo**
+</td>
+</tr>
+</table>
 
-<a href="https://platane.github.io/snk">
-  <img height="300px" src="https://user-images.githubusercontent.com/1659820/121798244-7c86d700-cc25-11eb-8c1c-b8e65556ac0d.gif" ></img>
-</a>
+---
 
-[platane.github.io/snk](https://platane.github.io/snk)
+## 📁 Featured Projects
 
-### **npm package**
+### 🎮 [Sentinel Hack 6.0](https://github.com/Dustless-web/SENTINELHACK6.0)
+**State-Level Hackathon Official Website** | TypeScript, Next.js, Tailwind
+- 🎨 Immersive Squid Game-inspired theme with smooth animations
+- 📅 Complete event management: tracks, schedule, sponsors, live registrations
+- 🚀 Production-ready 24-hour hackathon platform
+- **[Live Demo](https://sentinelhack.com)**
 
-```ts
-import { generateSnakeAnimation } from "generate-snake-animation";
+---
 
-const outputs = [
-  {
-    format: "svg",
-    drawOptions: {
-      // ..
-    },
-  },
-];
+### 🤖 [Basanti — AI Kirana Advisor](https://github.com/Dustless-web/Basanti)
+**AI Advisory System for MSMEs** | Python, Machine Learning
+- 💼 Intelligent business guidance for small retailers
+- 📊 Data-driven recommendations using predictive ML
+- 🎯 Designed to empower underserved business owners
+- **Impact**: Helping micro-entrepreneurs scale sustainably
 
-const results = await generateSnakeAnimation(
-  {
-    platform: "github", // supports github, gitlab and forgejo (codeberg)
-    username: "platane",
-    githubToken: process.env.GITHUB_TOKEN,
-  },
-  outputs,
-);
+---
 
-fs.writeFileSync("snake.svg", results[0]);
-```
+### 👴 [SGuardian — Fall Detection App](https://github.com/Dustless-web/SGuardian)
+**IoT Safety Solution** | Kotlin, Android
+- 📱 Real-time fall detection using smartphone sensors
+- 📍 Automatic SMS alerts with location to emergency contacts
+- ⚡ Low-latency sensor processing
+- **Use Case**: Safety monitoring for elderly & vulnerable populations
 
-or with npx
+---
 
-```sh
-npx generate-snake-animation@3 --forgejo_user codeberg.org/JasterV --output snake.svg?palette=codeberg
-```
+### 🌡️ [WeatherWise](https://github.com/Dustless-web/WeatherWise)
+**Weather-Based Lifestyle Advisory System** | Python
+- 🌤️ Intelligent recommendations based on weather patterns
+- 📈 Data analysis & user personalization
+- 🔮 Predictive insights for daily lifestyle optimization
 
-## Implementation
+---
 
-[solver algorithm](./packages/solver/README.md)
+### 🧠 [Sentient-X Engine](https://github.com/Dustless-web/sentient-x-engine)
+**AI Processing Engine** | Python, ML
+- 🤖 Advanced NLP & decision-making engine
+- ⚙️ Modular architecture for scalability
+- 🔗 Integrates with web interfaces for intelligent automation
 
-## Contribution Policy
+---
 
-This project does not accept pull request.
+### 🌐 [Sentient-X Web](https://github.com/Dustless-web/sentient-x-web)
+**AI-Powered Web Interface** | TypeScript, Next.js
+- 🎛️ Real-time interaction with AI engine
+- 📊 Data visualization & analytics dashboard
+- 🔌 Seamless backend-frontend integration
 
-Reporting or fixing issues is appreciated, but change in the API or implementation should be discussed in issue first and is likely not going be greenlighted.
+---
+
+### 🎨 [Portfolio Websites](https://github.com/Dustless-web?tab=repositories)
+Multiple versions showcasing design evolution:
+- **TypeScript Portfolio** — Modern, component-driven
+- **AI Portfolio** — Integrated with machine learning insights
+- **HTML5 Portfolio (ADI)** — Clean, semantic web design
+
+---
+
+### 💻 [4CODE](https://github.com/Dustless-web/4CODE)
+**Developer Tools & Utilities** | JavaScript
+- 🛠️ Code generation and automation scripts
+- 📦 Productivity utilities for developers
+
+---
+
+### 🌾 [AgrIVision Demo](https://github.com/Dustless-web/agrivision-demo)
+**Agricultural AI Application** | JavaScript
+- 🌱 Computer vision for crop health analysis
+- 📊 Farm management dashboard
+
+---
+
+### 🎓 [Smart Triage](https://github.com/Dustless-web/smart_triage)
+**Healthcare Priority System** | Python
+- 🏥 Intelligent patient prioritization
+- 📋 ML-based risk assessment
+
+---
+
+## 📊 Project Categories
+
+| Category | Projects | Technologies |
+|----------|----------|---------------|
+| **Web & Frontend** | Portfolio, Sentinel Hack, Sentient-X Web | TypeScript, React, Next.js |
+| **AI & ML** | Basanti, WeatherWise, Sentient-X Engine, Smart Triage | Python, TensorFlow, scikit-learn |
+| **Mobile & IoT** | SGuardian, AgrIVision | Kotlin, Android, Sensors |
+| **Full-Stack** | All projects integrate multiple layers | TypeScript + Python Stack |
+
+---
+
+## 🎯 What I'm Passionate About
+
+✨ **Building meaningful technology** — Every project I create has a purpose beyond the code
+
+🚀 **Scalable, clean architecture** — From MVP to production-ready systems
+
+🤖 **AI-driven innovation** — Pushing the boundaries of what's possible with machine learning
+
+🌍 **Social impact** — Creating tools that improve lives (healthcare, agriculture, accessibility)
+
+💡 **Continuous learning** — Staying on the cutting edge of web & AI technologies
+
+---
+
+## 📈 GitHub Stats
+
+<div align="center">
+
+![Dustless-web's GitHub stats](https://github-readme-stats.vercel.app/api?username=Dustless-web&show_icons=true&theme=dark)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Dustless-web&layout=compact&theme=dark)
+
+</div>
+
+---
+
+## 🏆 Highlights
+
+- ✅ **Multi-language proficiency** — TypeScript, Python, JavaScript, Kotlin, Go
+- ✅ **Full-stack capability** — From UI/UX to backend architecture and DevOps
+- ✅ **AI/ML expertise** — Production ML systems, NLP, computer vision
+- ✅ **Real-world impact** — Projects solving healthcare, agriculture, and accessibility challenges
+- ✅ **Hackathon excellence** — Built platforms for state-level competitions
+- ✅ **Open-source contributor** — Active in the developer community
+
+---
+
+## 💼 Let's Connect
+
+I'm always excited to collaborate on innovative projects, especially those combining:
+- **Web technologies** with **machine learning**
+- **User experience** with **intelligent backends**
+- **Ideas** with **real-world impact**
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github)](https://github.com/Dustless-web)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF6B6B?style=for-the-badge&logo=globe)](https://dustless-web.github.io)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/dustless-web)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail)](mailto:hello@dustlessweb.dev)
+
+**Feel free to reach out — I'd love to chat about ideas, projects, or opportunities!**
+
+</div>
+
+---
+
+## 🎓 Always Learning
+
+Currently exploring:
+- 🧠 Advanced LLM applications & RAG systems
+- 🔐 Web3 & blockchain integration
+- ⚡ Edge computing & real-time systems
+- 🎮 Interactive 3D web experiences
+- 🌐 Scalable microservices architecture
+
+---
+
+<div align="center">
+
+### "Code is poetry, AI is magic, and great products change the world." ✨
+
+**Thanks for visiting! Star ⭐ if you find these projects interesting!**
+
+---
+
+*Last updated: 2024 | Keep building, keep learning, keep shipping.*
+
+</div>
